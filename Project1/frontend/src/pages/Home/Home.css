@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.con
+{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    background: #000;
+}
+
+.nav-logo2 {
+    justify-content: start;
+    align-items: start;
+    background-image: url('../../assets/images/wedlight.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 1rem 3rem;
+    height: 4rem;
+    width: 4rem;
+}
+
+.nav2
+{
+    position: relative;
+    margin: 50px;
+    width: 370px;
+    height: 50px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav2_pos{
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    width: 90%;
+}
+.nav2 .link
+{
+    position: relative;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 0;
+    padding: 0 23px;
+    z-index: 1;
+}
+.nav2 .link:hover {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #4f1919, #f60000);
+    border-radius: 8px;
+    color: #fff; /* Optional: Change text color on hover */
+    box-shadow: 0px 4px 10px rgba(246, 0, 0, 0.7); /* Optional: Add shadow for hover effect */
+    transform: scale(1.05); /* Slightly increase the size on hover */
+    transition: transform 1s ease;
+  }
+/* Style for the entire carousel */
+#carouselExampleIndicators {
+    height: 20rem;
+    padding: 5px 40px;
+}
+
+/* Make sure the inner carousel items take full height */
+.carousel-inner {
+    height: 100%;
+}
+
+/* Set height for individual carousel items */
+.carousel-item {
+    height: 100%;
+}
+
+/* Set height for images and add a border */
+.d-block {
+    height: 100%;
+}
+
+/* Style for the carousel container */
+.com {
+    height: 89vh;
+}
+
+.sr-only{
+    font-weight: 700;
+    color: #000000;
+}
+
+.banquit {
+    margin-left: 3.2%;
+    width: 93.5%;
+    height: 35%;
+    padding: 14px;
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrollbar */
+    white-space: nowrap; /* Prevent wrapping of child elements */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #ffffff #ffffff; /* Firefox */
+}
+
+
+/* Style for the button */
+.bt {
+    display: flex;
+    margin: 0 10px;
+    align-items: center; /* Centers content vertically */
+    justify-content: center; /* Centers content horizontally */
+    height: 100%; /* Fixed height */
+    flex-grow: 1; /* Allows the item to grow within the flex container */
+    max-width: 12%; /* Adjust max width if necessary */
+    min-width: 22vh;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.bt:hover {
+    background: rgb(255, 233, 255); /* Background color */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Circle inside the .bt */
+.circle {
+    width: 70px; /* Set the width of the circle */
+    height: 70px; /* Set the height equal to the width */
+    border-radius: 50%; /* Makes the element a circle */
+    display: flex; /* Flexbox for centering content */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    background: transparent;
+    color: #000;
+}
+
+.map {
+    display: inline-block; /* Maintain inline-block for layout */
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    height: 100%;
+    width: 35%; /* Fixed width */
+    border-radius: 8px;
+    cursor: pointer;
+    box-sizing: border-box;
+    scroll-snap-align: start; /* Snap scroll behavior */
+    position: relative;
+    overflow: hidden; /* Hide overflow of inner content */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
+
+/* Ensure the image inside the .map container does not affect its size */
+.map img {
+    width: 100%;
+    display: block;
+    object-fit: cover; 
+    max-height: 140%;
+}
+
+/* Style for the inner divs or text inside the .map container */
+.map > div {
+    overflow: hidden; /* Ensures content inside doesn't overflow */
+    text-overflow: ellipsis; /* Truncate overflowing text with ellipsis */
+    white-space: nowrap; /* Prevent text from wrapping to new lines */
+    width: 100%; /* Ensure inner div takes full width */
+    box-sizing: border-box; /* Include padding/border in width calculation */
+}
+
+
+
+
+.image{
+    width: 100%;
+    height: 60%;
+}
+.banqu {
+    font-size: 1em; /* Slightly larger font for the banquet name */
+    font-weight: bold;
+    color: #000;
+    text-align: center; /* Center align text */
+    text-transform: uppercase; /* Make the banquet name stand out */
+    margin-bottom: 5px; /* Add space between banquet and price */
+    text-wrap: wrap;
+}
+
+/* Styling for the price */
+.price {
+    font-size: 1.1em; /* Slightly larger text for price */
+    font-weight: 500;
+    color: #f60000; /* Price in a noticeable color */
+    text-align: center;
+    margin-top: 5px; /* Add some spacing above the price */
+}
+
+.ven {
+    margin: 0 3rem ; /* This works if the container and positioning are compatible */
+    display: block; /* Ensure it's a block-level element */
+}
+/*********************************************************************************************************************************************/
+.full_block{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 37.5rem;
+}
+.block {
+    margin-left: 10%;
+    display: inline-block;
+    height: 88%;
+    width: 80%;
+    background-color: white;
+    overflow-y: scroll;     
+    scrollbar-width: none;  
+    -ms-overflow-style: none; 
+    word-wrap: break-word;
+    box-sizing: border-box;  
+    padding: 10px;
+}
+
+.block::-webkit-scrollbar {
+    display: none;
+}
+
+
+.btn-group{
+    padding: 5px;
+    height: 22%;
+    width: 50%;
+}
+.dropdown-menu{
+    width: 201%;
+    border: none;
+}
+.pic{
+    width: 20%;
+    height: 100%;
+    background: #f60000;
+}
+.dropdown-toggle {
+    display: inline-flex;          
+    align-items: center;          
+    font-family: var(--bs-btn-font-family);
+    font-size: var(--bs-btn-font-size);
+    font-weight: var(--bs-btn-font-weight);
+    line-height: var(--bs-btn-line-height);
+    color: var(--bs-btn-color);
+    border: none;
+}
+
+.dropdown-toggle h4{
+    margin: 10px;
+}
+.dropdown-toggle:hover{
+    border: 1px solid black; 
+    background-color: black;      
+    color: pink;
+    border: none;
+}
+
+.dropdown-toggle img {
+    margin-left: auto;            
+    width: 25%;  
+    background: white;                 /* Set image width */
+    height: 100%;    
+    border-radius: 20rem 0 0 20rem;              /* Set image height */
+    vertical-align: middle;        /* Align image vertically with text */
+}
+.btn.dropdown-toggle::after {
+    display: none;  /* Hides the dropdown arrow */
+}
+
+.btn h4{
+    padding: 2rem;
+}
+/* Slightly Darker Catchy Colors */
+.b_1  { background-color: #FFCDD2; }  /* Soft Red */
+.b_2  { background-color: #F8BBD0; }  /* Soft Pink */
+.b_3  { background-color: #FFAB91; }  /* Soft Peach */
+.b_4  { background-color: #81D4FA; }  /* Soft Blue */
+.b_5  { background-color: #A5D6A7; }  /* Soft Green */
+.b_6  { background-color: #FFF176; }  /* Soft Yellow */
+.b_7  { background-color: #FFCC80; }  /* Soft Orange */
+.b_8  { background-color: #D1C4E9; }  /* Soft Lavender */
+.b_9  { background-color: #CE93D8; }  /* Soft Lilac */
+.b_10 { background-color: #80DEEA; }  /* Soft Cyan */
+.b_11 { background-color: #C5E1A5; }  /* Soft Lime */
+.b_12 { background-color: #DCEDC8; }  /* Soft Mint */
+
+/* Slightly Darker Catchy Colors with Hover and Background Blur */
+.b_1, .b_2, .b_3, .b_4, .b_5, .b_6, .b_7, .b_8, .b_9, .b_10, .b_11, .b_12 {
+    padding: 20px;
+    color: #333;  /* Text color for contrast */
+    border-radius: 8px;
+    transition: transform 0.3s, backdrop-filter 0.3s, background-color 0.3s;
+    backdrop-filter: blur(5px); /* Initial blur */
+}
+
+.b_1:hover { background-color: #EF9A9A; }
+.b_2:hover { background-color: #F48FB1; }
+.b_3:hover { background-color: #FF8A65; }
+.b_4:hover { background-color: #4FC3F7; }
+.b_5:hover { background-color: #81C784; }
+.b_6:hover { background-color: #FFD54F; }
+.b_7:hover { background-color: #FFB74D; }
+.b_8:hover { background-color: #B39DDB; }
+.b_9:hover { background-color: #BA68C8; }
+.b_10:hover { background-color: #4DD0E1; }
+.b_11:hover { background-color: #AED581; }
+.b_12:hover { background-color: #C5E1A5; }
+
+/* Hover effect for all classes */
+.b_1:hover, .b_2:hover, .b_3:hover, .b_4:hover, .b_5:hover, .b_6:hover, 
+.b_7:hover, .b_8:hover, .b_9:hover, .b_10:hover, .b_11:hover, .b_12:hover {
+    transform: scale(1.01);  /* Slightly enlarges on hover */
+    backdrop-filter: blur(10px); /* Increases blur on hover */
+    color: black;
+}

@@ -1,0 +1,22 @@
+[
+    {
+        "email": "aryan.jaiswal1114@gmail.com",
+        "Address": "The Vijayran Palace by Royal Quest Resorts, jaipur, Rajasthan 302028",
+        "Banquet": "The Vijayran Palace",
+        "City": "Rajasthan",
+        "Details": "The Vijayran Palace by Royal Quest Resorts",
+        "Price": "45",
+        "State": "Jaipur",
+        "imagePreviewUrl": "blob:http://localhost:3000/dbfbe826-38b9-4a10-8a6f-5320a7908e04"
+    },
+    {
+        "email": "Rahul.jaiswal1114@gmail.com",
+        "Address": "Khasa Kothi Flyover, D Circle , Gopalbari,jaipur, Rajasthan 302001",
+        "Banquet": "Radisson",
+        "City": "Rajasthan",
+        "Details": "Radisson Jaipur City Center",
+        "Price": "49",
+        "State": "Jaipur",
+        "imagePreviewUrl": "blob:http://localhost:3000/df2e27d4-fe48-451a-8551-bceaea02a23b"
+    }
+]
